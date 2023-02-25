@@ -137,12 +137,12 @@
     //    * Designate categories with whatever granularity is appropriate for your review process,
     //    * or you could just have a single category called "default".
     //    */
-      "reviewCategories": [
-        // Some example categories:
-        "production", // projects that ship to production
-        "tools",      // non-shipping projects that are part of the developer toolchain
-        "prototypes"  // experiments that should mostly be ignored by the review process
-      ],
+    "reviewCategories": [
+      // Some example categories:
+      "production", // projects that ship to production
+      "tools", // non-shipping projects that are part of the developer toolchain
+      "prototypes" // experiments that should mostly be ignored by the review process
+    ],
     //
     //   /**
     //    * A list of NPM package scopes that will be excluded from review.
@@ -169,10 +169,7 @@
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
      * RegExp escapes need two backslashes, and ordinary periods should be "\\.".
      */
-    "allowedEmailRegExps": [
-      "[^@]+@users\\.noreply\\.github\\.com",
-      "rush-bot@example\\.org"
-    ],
+    "allowedEmailRegExps": ["[^@]+@users\\.noreply\\.github\\.com", "rush-bot@example\\.org"],
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
